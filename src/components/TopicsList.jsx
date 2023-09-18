@@ -27,7 +27,7 @@ const getTopics = async() =>{
 
 const TopicsList = async() => {
 
-    const topics = await getTopics();
+    const {topics} = await getTopics();
 
   return (
     <>
