@@ -4,7 +4,7 @@ import React from 'react'
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-const page = () => {
+const AddTopic = () => {
 
   const router = useRouter();
 
@@ -65,4 +65,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AddTopic
