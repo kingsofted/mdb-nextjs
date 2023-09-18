@@ -1,10 +1,10 @@
-import TopicsList from '../components/TopicsList'
+import TopicsList from '@/components/TopicsList'
 
 export default function Home() {
   return (
-    <div>
-      knn
-    </div>
-      // <TopicsList/>
+    // <div>
+    //   knn
+    // </div>
+      <TopicsList/>
   )
 }

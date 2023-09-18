@@ -47,14 +47,6 @@ const TopicsList = async() => {
             </div>
         </div>
     ))}
-        {/* <div className='p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start'>
-            <div>
-                <h2 className='font-bold text-2xl'>Hello</h2>
-                <div>Hello</div>
-                <Image src="https://media.istockphoto.com/id/1173279965/photo/smart-city-and-abstract-dot-point-connect-with-gradient-line.jpg?s=612x612&w=0&k=20&c=WkMJQe9YWZ7K575cA9OdqB4q6XrqlrRMafE2UbF9MT4=" width={300} height={700} alt='image' priority/>
-            </div>
-
-        </div> */}
     </>
   )
 }
