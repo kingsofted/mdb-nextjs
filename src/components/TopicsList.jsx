@@ -36,7 +36,7 @@ const TopicsList = async() => {
             <div>
                 <h2 className='font-bold text-2xl'>{t.title}</h2>
                 <div>{t.description}</div>
-                <Image src={`${t.imageURL}`} width={300} height={700} alt='image' priority className='w-auto h-auto'/>
+                {/* <Image src={`${t.imageURL}`} width={300} height={700} alt='image' priority className='w-auto h-auto'/> */}
             </div>
 
             <div className='flex gap-2'>
