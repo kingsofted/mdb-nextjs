@@ -23,7 +23,7 @@ const fetchData = async(id) =>{
 }
 
 
-const page = async({params}) => {
+const EditTopic = async({params}) => {
 
   const id = params.id;
 
@@ -38,4 +38,4 @@ const page = async({params}) => {
   )
 }
 
-export default page
+export default EditTopic
