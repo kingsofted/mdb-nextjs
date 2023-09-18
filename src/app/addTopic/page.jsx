@@ -27,6 +27,7 @@ const page = () => {
     try {
 
       // await fetch("http://localhost:3000/api/topics");
+      // Client component dont need full address
       const res = await fetch("/api/topics",{
         method: "POST",
         headers:{

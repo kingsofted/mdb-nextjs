@@ -3,8 +3,11 @@ import React from 'react'
 
 // get data need to put full api end point address
 const fetchData = async(id) =>{
+
+  const apiUrl = process.env.API_URL;
+
   try {
-    const result = await fetch(`http://localhost:3000/api/topics/${id}`,{
+    const result = await fetch(`${apiUrl}/api/topics/${id}`,{
       cache: 'no-store',
     });
     

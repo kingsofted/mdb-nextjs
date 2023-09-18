@@ -20,6 +20,7 @@ const EditTopicForm = ({id,title,description,imageURL}) => {
     }
 
     try {
+      // client component dont need full api address
       const result = await fetch(`/api/topics/${id}`,{
         method:"PUT",
         headers:{
