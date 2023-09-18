@@ -8,16 +8,16 @@ const page = () => {
 
   const router = useRouter();
 
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState("");
-  const [imageURL, setImageURL] = useState("");
+  // const [title, setTitle] = useState('');
+  // const [description, setDescription] = useState("");
+  // const [imageURL, setImageURL] = useState("");
 
 
   const handleSubmit = async(e) =>{
     e.preventDefault();
-    // const title = e.target[0].value;
-    // const description = e.target[1].value;
-    // const imageURL = e.target[2].value;
+    const title = e.target[0].value;
+    const description = e.target[1].value;
+    const imageURL = e.target[2].value;
 
     if(!title || !description || !imageURL){
       alert("Please enter all field !");
@@ -54,9 +54,9 @@ const page = () => {
 
   return (
     <form className='flex flex-col gap-3' onSubmit={handleSubmit}>
-        <input className="border border-slate-500 px-8 py-2" type='text' placeholder='Topic Title' onChange={(e) => setTitle(e.target.value)}/>
-        <input className="border border-slate-500 px-8 py-2" type='text' placeholder='Topic Description' onChange={(e) => setDescription(e.target.value)}/>
-        <input className="border border-slate-500 px-8 py-2" type='text' placeholder='Topic Image Url' onChange={(e)=>setImageURL(e.target.value)}/>
+        <input className="border border-slate-500 px-8 py-2" type='text' placeholder='Topic Title'/>
+        <input className="border border-slate-500 px-8 py-2" type='text' placeholder='Topic Description' />
+        <input className="border border-slate-500 px-8 py-2" type='text' placeholder='Topic Image Url'/>
 
         <button className='bg-green-600 font-bold text-white py-3 px-6 w-fit' type='submit'>
             Add Topic
